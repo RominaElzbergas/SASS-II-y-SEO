@@ -238,30 +238,6 @@ div:hover{
 }
 
 
-.imagen1{
-  width: 200px;
-}
-
-.fotohombre{
-  width: 200px;
-   justify-content: center;
-}
-
-.imagen3{
-  width: 200px;
-}
-
-.imagen4{
-  width: 250px;
-}
-
-.contenido  {
-  max-width: min-content;
-  justify-content: center;
-
-}
-
-
 .titulo_cont {
   width: max-content;
   display: block;
@@ -301,4 +277,135 @@ li {
 
 a{
   color: blue;
+}
+
+/*-------------------------------MOBILE----------------------------------------*/
+@media only screen and (max-widh: 468px) {
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  header .titulo { 
+    width: 300px;
+  }
+  
+  header {width: 100%;
+  }
+  
+  nav {
+    background-image: url(../Multimedias/valentine-day-romantic-background-free-photo.jpg);
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item{
+    display: flex;
+    width: max-content;
+    padding: 10px;  
+  }
+
+ul{
+    display: flex;
+  }
+  
+  li{
+    list-style: none;
+    font-size: 20PX;
+    display: block;  
+    padding: 5px;
+}
+
+  a{color: #000;
+    text-decoration: none;
+  }
+  
+  a:hover{
+    color: #ff0000;
+  }
+    
+  .titulo {
+    display: block;
+    width: max-content;
+    text-align: center;
+    font-size: 55px;
+    font-family: initial;
+    font-style: italic;
+  }
+
+  section{
+    background-image: url(../Multimedias/fondomarm.jpg);
+    width: 100%;
+    align-content: center;
+    }
+
+  .subtitulo {
+    font: corsiva;
+    font-size: 25px;
+    color: #000;
+    font-style: italic;
+    text-align: center;
+    display: block;
+}
+
+.subtitulo_indumentariayaccesorios{
+    display:block;
+    color: #000;
+    text-align: center;
+}
+.contenido  {
+    max-width: min-content;
+    justify-content: center;
+}
+ 
+.imagen1{
+    width: 5px;
+  }
+  
+  .fotohombre{
+    width: 200px;
+     justify-content: center;
+  }
+  
+  .imagen3{
+    width: 200px;
+  }
+  
+  .imagen4{
+    width: 250px;
+  }
+
+footer{
+    background-image: url(../Multimedias/oro.jpg);
+    background-size: cover;
+    width: 100%;
+  }
+  
+  .tituloredes{
+    text-align: center;
+    font-size: 25px;
+    display: inline;
+    font-style: oblique;
+  }
+  .redes{
+    text-align: center;
+    font-size: 82px;
+    display: inline;
+  }
+  
+  .face{
+    width: 70px;
+  }
+  
+  .insta{
+    width: 62px;
+  }
+  
+  .redes{
+    width: 68px;
+  }
 }

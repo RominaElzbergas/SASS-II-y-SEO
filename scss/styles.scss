@@ -1,304 +1,792 @@
-*{
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*-------------------------------MOBILE index----------------------------------------*/
+
+@media only screen and (max-width: 468px) {
+  * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
   }
-  
-  header .titulo { 
-    width: 300px;
-  }
-  
-  header {width: 100%;
-  }
-  
-  
-  
-  nav {
-    background-image: url(../Multimedias/valentine-day-romantic-background-free-photo.jpg);
+  header {
     width: 100%;
+    background-image: url(../Multimedias/valentine-day-romantic-background-free-photo.jpg);
     background-size: cover;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
+    display: block;
   }
-  
-  
-  li{
+
+  .item {
+    width: 100%;
+    display: block;
+  }
+
+  li {
     list-style: none;
-    font-size: 20PX;
   }
-  
-  .fondoquienes{
-    background-image: url(../Multimedias/fondomarm.jpg);
-  }
-  
-  
-  a{color: #000;
+
+  a {
+    color: #000;
     text-decoration: none;
   }
-  
-  a:hover{
-    color: #ff0000;
+
+  .header_index {
+    width: auto;
+    height: auto;
   }
-  
-  .subtitulo {
-             font: corsiva;
-             font-size: 25px;
-             color: #000;
-             font-style: italic;
-             text-align: center;
-             display: block;
-  }
-  
-  .subtitulo_indumentariayaccesorios{
-       display:block;
-       color: #000;
-       text-align: center;
-  }
-  
-  .face{
-    width: 70px;
-  }
-  
-  .insta{
-    width: 62px;
-  }
-  
-  .redes{
-    width: 68px;
-  }
-  
-  .contenedor {
+  .titulobrighter {
+    display: inline-block;
     width: 100%;
-    max-height: max-content;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 50px;
-    text-align: justify;
-  }
-  
-  
-  
-  .contenido1 {
-    display: block;
-    max-width: 20%;
-    margin-left: 20px;}
-  
-   
-  
-  ul{
-    display: flex;
-  }
-  
-  li {
-    display: block;
-  }
-  
-  
-  .titulo {
-    display: block;
-    width: max-content;
     text-align: center;
-    font-size: 55px;
+    font-size: 30px;
     font-family: initial;
     font-style: italic;
   }
-  
+
+  section {
+    background-color: black;
+    background-size: cover;
+  }
+
+  .subtitulo {
+    font: corsiva;
+    font-size: 30px;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    display: block;
+  }
+
+  .subtitulo_indumentariayaccesorios {
+    display: block;
+    color: turquoise;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+  }
+
+  .contenido {
+    display: block;
+    text-align: center;
+  }
+  .tituloindu {
+    color: turquoise;
+  }
+  .textoin {
+    color: white;
+    display: inline-block;
+  }
+
+  .imagen1 {
+    width: 190px;
+  }
+
+  .fotohombre {
+    width: 230px;
+    justify-content: center;
+  }
+
+  .imagen3 {
+    width: 240px;
+  }
+
+  .imagen4 {
+    width: 320px;
+    justify-content: center;
+  }
+
+  footer {
+    background-image: url(../Multimedias/oro.jpg);
+    background-size: cover;
+    display: block;
+    height: 100%;
+  }
+
+  .tituloredes {
+    font-size: 15px;
+    font-style: oblique;
+    text-align: center;
+  }
+  .redes {
+    text-align: center;
+    width: 100%;
+  }
+
+  .face {
+    width: 45px;
+    max-width: min-content;
+  }
+
+  .insta {
+    width: 37px;
+  }
+  .redesinwp {
+    width: 45px;
+  }
+  .ul_footer {
+    width: 100%;
+  }
+  .derechos {
+    color: black;
+    display: inline-block;
+  }
+  /*--------------------------------------QUIENESSOMOS--------------------------------*/
+  .section_quienes {
+    background-image: url(../Multimedias/fondomarm.jpg);
+  }
+  .subtitulo_quienes {
+    text-align: center;
+  }
+
+  .text_quienes {
+    text-align: center;
+    display: inline-block;
+  }
+
+  .cont_video {
+    display: block;
+    width: 100%;
+  }
+  .videoquienes {
+    margin-left: 20px;
+  }
+  /*-------------------------------------NUESTROSPRODUCTOS------------------------*/
+  .contenedor_nuestrosproductos {
+    grid-template-rows: min-content;
+    row-gap: 15px;
+  }
+  .titulo_nuestros {
+    color: aqua;
+    text-align: center;
+  }
+  .texto_nuestrosproductos {
+    color: white;
+    text-align: center;
+  }
+  .fotosprod {
+    color: white;
+    display: inline-block;
+  }
+
+  .topraso {
+    grid-template-rows: min-content;
+    text-align: center;
+  }
+
+  .imgtopraso {
+    width: 270px;
+  }
+
+  .topdeport {
+    text-align: center;
+  }
+
+  .topdeportivo {
+    width: 270px;
+  }
+
+  .moños {
+    text-align: center;
+  }
+
+  .imgmoños {
+    width: 340px;
+  }
+
+  .portacosmeticos {
+    text-align: center;
+  }
+
+  .imgporta {
+    width: 330px;
+  }
+
+  .body {
+    text-align: center;
+  }
+
+  .imgbody {
+    width: 335px;
+  }
+
+  /*---------------------------------------CONTACTOS-------------------------------*/
+
+  .titulo3 {
+    text-align: center;
+    font-size: 35px;
+    color: black;
+  }
+
   .formulario {
     display: inline-block;
     vertical-align: text-bottom;
-    margin-bottom: 100px;
     font-size: 20px;
   }
-  
-  .fondo{
-    background-image: url(../Multimedias/fondocontac.jpg);
-    height: 580px;
+  .contenedor_contactos {
+    text-align: right;
+  }
+  .contenido1 {
+    display: block;
+    max-width: 20%;
+  }
+  .contenidoenviar {
+    text-align: center;
+  }
+  /*-------------------------------REALIZAR-PEDIDOS---------------------------------------*/
+
+  .subtitulo_realizar {
+    color: black;
+    text-align: center;
+  }
+
+  .textoreali {
+    text-align: center;
+  }
+  .maps {
+    text-align: center;
+
+    width: 480px;
+  }
+}
+
+/*----------------------------------------TABLET--------------------------------------*/
+@media only screen and (min-width: 469px) and (max-width: 1023px) {
+  header {
+    width: 100%;
     background-size: cover;
+    background-image: url(../Multimedias/valentine-day-romantic-background-free-photo.jpg);
+    display: block;
   }
-  
-  
-  .titulo3{
-    text-align: center;
-   font-size: 45px;
-   color: #000;
-   height: 110px;
+
+  .item {
+    width: 100%;
+    display: block;
   }
-  
-  .maps{
-    text-align: center;
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .titulobrighter {
     display: inline-block;
-    width: 700px;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-family: initial;
+    font-style: italic;
   }
-  
-  footer{
-    background-image: url(../Multimedias/oro.jpg);
+
+  section {
+    background-color: black;
     background-size: cover;
-    width: 100%;
-    
   }
-  
-  .tituloredes{
+
+  .subtitulo {
+    font: corsiva;
+    font-size: 30px;
+    color: white;
+    font-style: italic;
     text-align: center;
-    font-size: 25px;
-    display: inline;
-    font-style: oblique;
+    display: block;
   }
-  .redes{
+
+  .subtitulo_indumentariayaccesorios {
+    display: block;
+    color: turquoise;
     text-align: center;
-    font-size: 82px;
-    display: inline;
+    font-size: 20px;
+    font-style: italic;
   }
-  
-  .contenedor_quienessomos{
-    text-align: center;
-  }
-  
-  .contenedor_contactos{
-    text-align: center;
-  }
-  
-  .contenedor_realizarpedidos{
-  text-align: center;
-  }
-  
-  section{
-    background-image: url(../Multimedias/fondomarm.jpg);
-    width: 100%;
-    align-content: center;
-    }
-  
-  .section_nuestrosproductos{
-  width: 100%;
-  }
-  
-  
-  div:hover{
-    border: solid 1px blue;
-  }
-  
-  .contenedor_nuestrosproductos{
-   
-    grid-template-rows: min-content;
-    row-gap: 15px;
-    
-  }
-  
-  
-  
-  .titulo_nuestrosproductos{
-    
+
+  .contenido {
     text-align: center;
   }
-  
-  
-  .topraso{
-  
-    grid-template-rows: min-content;
+
+  .tituloindu {
+    color: turquoise;
+  }
+
+  .contenido_index1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     text-align: center;
+    align-items: center;
+    margin-top: 10px;
   }
-  .imgtopraso{
-     width: 290px;
-  }
-  
-  .topdeport{
-    
+
+  .contenido_index2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     text-align: center;
+    align-items: center;
+    margin-top: 60px;
   }
-  .topdeportivo{
-    width: 280px;   
+
+  .textoin {
+    color: white;
   }
-  
-  .moños{
-  
-    text-align: center;
-    
+
+  .contenido {
+    width: min-content;
   }
-  .imgmoños{
-    width: 400px;
+
+  .imagen1 {
+    width: 170px;
+    margin-top: 100px;
   }
-  
-  .portacosmeticos{
-  
-    text-align: center;
-  }
-  .imgporta{
-    width: 380px;
-  }
-  
-  .body{
-    text-align: center;
-   
-  }
-  .imgbody{
-    width: 365px;
-  }
-  
-  
-  .imagen1{
-    width: 200px;
-  }
-  
-  .fotohombre{
-    width: 200px;
-     justify-content: center;
-  }
-  
-  .imagen3{
-    width: 200px;
-  }
-  
-  .imagen4{
+
+  .fotohombre {
     width: 250px;
   }
-  
-  .contenido  {
-    max-width: min-content;
-    justify-content: center;
-  
+
+  .imagen3 {
+    width: 220px;
+    margin-top: 130px;
   }
-  
-  
-  .titulo_cont {
-    width: max-content;
+
+  .imagen4 {
+    width: 380px;
+  }
+
+  footer {
+    background-image: url(../Multimedias/oro.jpg);
+    background-size: cover;
     display: block;
-  color: darkcyan;
+    height: 100%;
   }
-  
-  .titulo{
-      width: max-content;
-      display: block;
-    color: darkcyan;
-  
+
+  .tituloredes {
+    font-size: 35px;
+    font-style: oblique;
+    text-align: center;
   }
-  .nav_contac{
+  .ul_footer {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .face {
+    width: 50px;
+    max-width: min-content;
+  }
+
+  .insta {
+    width: 42px;
+  }
+  .redesinwp {
+    width: 50px;
+  }
+  .ul_footer {
     width: 100%;
   }
-  
-  .nav
-  {width: 100%;}
-  
-  .item{
-    display: flex;
-    width: max-content;
-    padding: 10px;  
+  .derechos {
+    color: black;
+    display: inline-block;
   }
-  
-  .header_contac{
+
+  /*--------------------------------------QUIENESSOMOS--------------------------------*/
+  .section_quienes {
+    background-image: url(../Multimedias/fondomarm.jpg);
+  }
+  .subtitulo_quienes {
+    text-align: center;
+  }
+
+  .text_quienes {
+    text-align: center;
+  }
+
+  .cont_video {
+    display: block;
+    width: 55%;
+  }
+  .videoquienes {
+    width: min-content;
+  }
+
+  /*-------------------------------------NUESTROSPRODUCTOS------------------------*/
+  .contenedor_nuestrosproductos {
+    grid-template-rows: min-content;
+    row-gap: 15px;
+  }
+  .titulo_nuestros {
+    color: aqua;
+    text-align: center;
+  }
+  .texto_nuestrosproductos {
+    color: white;
+    text-align: center;
+  }
+  .fotosprod {
+    color: white;
+    display: inline-block;
+  }
+
+  .topraso {
+    grid-template-rows: min-content;
+    text-align: center;
+  }
+
+  .imgtopraso {
+    width: 230px;
+  }
+
+  .topdeport {
+    text-align: center;
+  }
+
+  .topdeportivo {
+    width: 230px;
+  }
+
+  .moños {
+    text-align: center;
+  }
+
+  .imgmoños {
+    width: 350px;
+  }
+
+  .portacosmeticos {
+    text-align: center;
+  }
+
+  .imgporta {
+    width: 380px;
+  }
+
+  .body {
+    text-align: center;
+  }
+
+  .imgbody {
+    width: 360px;
+  }
+
+  .div2nuestros {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .div3nuestros {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  /*---------------------------------------CONTACTOS-------------------------------*/
+
+  .titulo3 {
+    text-align: center;
+    font-size: 45px;
+    color: black;
+  }
+
+  .formulario {
+    display: inline-block;
+    vertical-align: text-bottom;
+    font-size: 20px;
+  }
+  .contenedor_contactos {
+    text-align: center;
+  }
+  .contenido1 {
+    display: block;
+    max-width: 20%;
+  }
+  .contenidoenviar {
+    text-align: center;
+  }
+  /*-------------------------------REALIZAR-PEDIDOS---------------------------------------*/
+  .subtitulo_realizar {
+    color: black;
+    text-align: center;
+  }
+
+  .textoreali {
+    text-align: center;
+  }
+  .maps {
+    display: flex;
+    text-align: center;
+
+    width: 480px;
+  }
+}
+
+/*------------------------------------ESCRITORIO index------------------------------*/
+
+@media only screen and (min-width: 1024px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  header {
     width: 100%;
     background-image: url(../Multimedias/valentine-day-romantic-background-free-photo.jpg);
-  background: cover;
+    background-size: cover;
+    display: block;
   }
-  
-  
+
+  .item {
+    width: 100%;
+    display: block;
+  }
+
   li {
-    padding: 5px;
-  
+    list-style: none;
   }
-  
-  a{
-    color: blue;
+
+  a {
+    color: #000;
+    text-decoration: none;
   }
+
+  .header_index {
+    width: auto;
+    height: auto;
+  }
+  .titulobrighter {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-family: initial;
+    font-style: italic;
+  }
+
+  section {
+    background-color: black;
+    background-size: cover;
+  }
+
+  .subtitulo {
+    font: corsiva;
+    font-size: 30px;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    display: block;
+  }
+
+  .subtitulo_indumentariayaccesorios {
+    display: block;
+    color: turquoise;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+  }
+
+  .tituloindu {
+    color: turquoise;
+  }
+
+  .textoin {
+    color: white;
+    display: inline-block;
+  }
+
+  .contenido_index1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 60px;
+  }
+  .contenido_index2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 60px;
+  }
+
+  .contenido {
+    width: min-content;
+  }
+
+  .imagen1 {
+    width: 220px;
+  }
+
+  .fotohombre {
+    width: 290px;
+    justify-content: center;
+  }
+
+  .imagen3 {
+    width: 260px;
+  }
+
+  .imagen4 {
+    width: 410px;
+    justify-content: center;
+  }
+
+  footer {
+    background-image: url(../Multimedias/oro.jpg);
+    background-size: cover;
+    display: block;
+    height: 100%;
+  }
+
+  .tituloredes {
+    font-size: 35px;
+    font-style: oblique;
+    text-align: center;
+  }
+
+  .ul_footer {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .face {
+    width: 60px;
+    max-width: min-content;
+  }
+
+  .insta {
+    width: 52px;
+  }
+
+  .redesinwp {
+    width: 60px;
+  }
+  .ul_footer {
+    width: 100%;
+  }
+  .derechos {
+    color: black;
+    display: inline-block;
+  }
+  /*--------------------------------------QUIENESSOMOS--------------------------------*/
+  .section_quienes {
+    background-image: url(../Multimedias/fondomarm.jpg);
+  }
+  .subtitulo_quienes {
+    text-align: center;
+  }
+
+  .text_quienes {
+    text-align: center;
+    display: inline-block;
+  }
+
+  .cont_video {
+    display: block;
+    width: 100%;
+  }
+  .videoquienes {
+    margin-left: 20px;
+  }
+  /*-------------------------------------NUESTROSPRODUCTOS------------------------*/
+  .contenedor_nuestrosproductos {
+    grid-template-rows: min-content;
+    row-gap: 15px;
+  }
+  .titulo_nuestros {
+    color: aqua;
+    text-align: center;
+  }
+  .texto_nuestrosproductos {
+    color: white;
+    text-align: center;
+  }
+  .fotosprod {
+    color: white;
+    display: inline-block;
+  }
+
+  .topraso {
+    grid-template-rows: min-content;
+    text-align: center;
+  }
+
+  .imgtopraso {
+    width: 270px;
+  }
+
+  .topdeport {
+    text-align: center;
+  }
+
+  .topdeportivo {
+    width: 270px;
+  }
+
+  .moños {
+    text-align: center;
+  }
+
+  .imgmoños {
+    width: 340px;
+  }
+
+  .portacosmeticos {
+    text-align: center;
+  }
+
+  .imgporta {
+    width: 330px;
+  }
+
+  .body {
+    text-align: center;
+  }
+
+  .imgbody {
+    width: 335px;
+  }
+
+  /*---------------------------------------CONTACTOS-------------------------------*/
+
+  .titulo3 {
+    text-align: center;
+    font-size: 35px;
+    color: black;
+  }
+
+  .formulario {
+    display: inline-block;
+    vertical-align: text-bottom;
+    font-size: 20px;
+  }
+  .contenedor_contactos {
+    text-align: right;
+  }
+  .contenido1 {
+    display: block;
+    max-width: 20%;
+  }
+  .contenidoenviar {
+    text-align: center;
+  }
+  /*-------------------------------REALIZAR-PEDIDOS---------------------------------------*/
+
+  .subtitulo_realizar {
+    color: black;
+    text-align: center;
+  }
+
+  .textoreali {
+    text-align: center;
+  }
+  .maps {
+    text-align: center;
+
+    width: 480px;
+  }
+}
+
+@import "variables";
